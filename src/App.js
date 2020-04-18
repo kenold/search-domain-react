@@ -4,7 +4,7 @@ import Box from "./components/Box/Box";
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="container">
       <Box />
     </div>
   );

@@ -1,13 +1,14 @@
 import React from "react";
+import "./Box.scss";
 
 const Box = ({ title, subtitle, label, image }) => {
   return (
     <div className="box">
-      <div className="box__label">label</div>
-      <h4 className="box__title">title</h4>
-      <div className="box__subtitle">sub</div>
+      <div className="box__label">Pro User</div>
+      <h4 className="box__title">VPS</h4>
+      <div className="box__subtitle">$30 / Month</div>
       <div className="box__icon">icon</div>
-      <div className="box__image">image</div>
+      <img src="" className="box__image" alt="" />
     </div>
   );
 };

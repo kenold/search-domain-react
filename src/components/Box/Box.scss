@@ -1,0 +1,31 @@
+.box {
+  background-color: #fef4da;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  &__label {
+    background-color: #fff;
+    border-radius: 10px;
+    color: #593F92;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    color: #444;
+    font-weight: 500;
+  }
+  &__icon {
+    margin-top: 10px;
+
+  }
+  &__image {
+    max-width: 100px;
+  }
+}
