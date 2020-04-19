@@ -12,6 +12,8 @@ const BoxList = ({ services }) => {
           subtitle={service.subtitle}
           icon={service.icon}
           image={service.image}
+          color={service.color}
+          gridArea={service.gridArea}
         />
       ))}
     </div>

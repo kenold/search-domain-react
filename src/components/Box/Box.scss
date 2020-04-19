@@ -15,24 +15,40 @@
   &__title {
     font-size: 1.5rem;
     font-weight: 500;
+    line-height: 1.4;
     margin-bottom: 10px;
   }
   &__subtitle {
     color: #444;
-    font-weight: 500;
+    line-height: 1.4;
   }
   &__icon {
     margin-top: 10px;
-
+    svg {
+      //fill: #583e92;
+    }
   }
   &__image {
     margin-top: 20px;
     max-width: 100px;
   }
-  &--purple {
+  &--medium-purple {
     background-color: #eec2ff;
   }
-  &--yellow {
+  &--light-yellow {
     background-color: #fef4da;
   }
+  &--light-blue {
+    background-color: #d5f5ff;
+  }
+  &--light-orange {
+    background-color: #fff1e6;
+  }
+  &--light-purple {
+    background-color: #fbf4ff;
+  }
+  &--light-grey {
+    background-color: #faf9f7;
+  }
+
 }

@@ -1,13 +1,26 @@
 import React from "react";
 import "./Box.scss";
+import { FaChevronCircleRight } from "react-icons/fa";
+import { IconContext } from "react-icons";
 
-const Box = ({ title, subtitle, label, icon, image }) => {
+const Box = ({ title, subtitle, label, icon, image, color, gridArea }) => {
   return (
-    <div className="box">
+    <div className={`box box--${color} grid-${gridArea}`}>
       {label && <div className="box__label">{label}</div>}
       <h4 className="box__title">{title}</h4>
       <div className="box__subtitle">{subtitle}</div>
-      {icon && <div className="box__icon">{icon}</div>}
+      {icon && (
+        <div className="box__icon">
+          {/* TODO: create Icon component */}
+          <IconContext.Provider
+            value={{ color: "#583e92", size: "1.5rem", className: icon }}
+          >
+            <div>
+              <FaChevronCircleRight />
+            </div>
+          </IconContext.Provider>
+        </div>
+      )}
       {image && (
         <img src="" className="box__image" alt={`${title} ${subtitle}`} />
       )}
