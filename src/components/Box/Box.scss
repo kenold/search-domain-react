@@ -1,8 +1,16 @@
 .box {
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
   padding: 20px;
+  position: relative;
   text-align: center;
+  &__body {
+    z-index: 1;
+  }
   &__label {
     background-color: #fff;
     border-radius: 10px;
@@ -15,7 +23,7 @@
   &__title {
     font-size: 1.5rem;
     font-weight: 500;
-    line-height: 1.4;
+    line-height: 1.2;
     margin-bottom: 10px;
   }
   &__subtitle {
@@ -24,13 +32,13 @@
   }
   &__icon {
     margin-top: 10px;
-    svg {
-      //fill: #583e92;
-    }
   }
   &__image {
     margin-top: 20px;
     max-width: 100px;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
   }
   &--medium-purple {
     background-color: #eec2ff;
@@ -50,5 +58,8 @@
   &--light-grey {
     background-color: #faf9f7;
   }
+}
 
+.grid-four .box__body {
+  margin-bottom: 80px;
 }

@@ -35,7 +35,8 @@ export const services = [
     title: "Installation Fee",
     subtitle: "Get 7 Days Trial",
     icon: "",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dkwgkbgqq/image/upload/v1587338681/assets/marketing.jpg",
     color: "light-orange",
     gridArea: "four"
   },
