@@ -1,0 +1,44 @@
+.cc {
+  background-color: var(--color-purple);
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 350px;
+  height: 180px;
+  margin: 0 auto;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__balance {
+    &-label {
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+    }
+    &-amount {
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+  }
+  &__logo img {
+    width: 25px;
+  }
+  &__footer {
+    margin-top: auto;
+  }
+  &__name {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 90%;
+    margin-bottom: 0.5rem;
+  }
+  &__bottom {
+    color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 90%;
+    font-weight: 300;
+  }
+}

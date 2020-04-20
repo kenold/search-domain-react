@@ -1,0 +1,17 @@
+.user {
+  text-align: center;
+  &__avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  &__name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: .5rem;
+  }
+  &__role {
+    font-size: .75rem;
+    margin-top: .5rem;
+  }
+}
