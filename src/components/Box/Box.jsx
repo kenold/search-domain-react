@@ -24,7 +24,9 @@ const Box = ({ title, subtitle, label, icon, image, color, gridArea }) => {
         )}
       </div>
       {image && (
-        <img src={image} className="box__image" alt={`${title} ${subtitle}`} />
+        <div className="box__image">
+          <img src={image} alt={`${title} ${subtitle}`} />
+        </div>
       )}
     </div>
   );

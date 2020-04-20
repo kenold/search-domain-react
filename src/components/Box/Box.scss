@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 30px 15px;
   position: relative;
   text-align: center;
   &__body {
@@ -15,9 +15,10 @@
     background-color: #fff;
     border-radius: 10px;
     color: #593F92;
+    font-size: .75rem;
     font-weight: 500;
-    margin-bottom: 40px;
-    padding: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
     text-align: center;
   }
   &__title {
@@ -28,17 +29,23 @@
   }
   &__subtitle {
     color: #444;
+    font-size: .75rem;
+    font-weight: 500;
     line-height: 1.4;
   }
   &__icon {
     margin-top: 10px;
   }
   &__image {
-    margin-top: 20px;
-    max-width: 100px;
     position: absolute;
     bottom: 0;
     z-index: 0;
+    img {
+      max-width: 150px;
+      @media (min-width: 768px) {
+        max-width: 200px;
+      }
+    }
   }
   &--medium-purple {
     background-color: #eec2ff;
@@ -60,6 +67,35 @@
   }
 }
 
-.grid-four .box__body {
-  margin-bottom: 80px;
+.grid {
+  &-one {
+    grid-area: one;
+  }
+  &-two {
+    grid-area: two;
+  }
+  &-three {
+    grid-area: three;
+    .box__subtitle {
+      font-size: 1.125rem;
+    }
+  }
+  &-four {
+    grid-area: four;
+    justify-content: flex-start;
+  }
+  &-five {
+    grid-area: five;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  &-six {
+    grid-area: six;
+  }
+}
+
+@media (min-width: 768px) {
+  .box {
+    margin-bottom: 0;
+  }
 }

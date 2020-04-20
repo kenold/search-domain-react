@@ -1,7 +1,24 @@
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six";
+    grid-template-rows: repeat(3, auto) 250px auto;
+    justify-content: center;
+}
 @media (min-width: 768px) {
   .boxes {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    grid-template-columns: 150px 180px 270px 150px;
+    grid-template-areas: 
+      "one two four five"
+      "three three four five"
+      "three three four six";
+      grid-template-rows: auto;
+    gap: 10px;
   }
 }
