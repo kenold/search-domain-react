@@ -14,7 +14,11 @@ const Box = ({ title, subtitle, label, icon, image, color, gridArea }) => {
           <div className="box__icon">
             {/* TODO: create Icon component */}
             <IconContext.Provider
-              value={{ color: "#583e92", size: "1.5rem", className: icon }}
+              value={{
+                color: "var(--color-purple)",
+                size: "1.5rem",
+                className: icon
+              }}
             >
               <div>
                 <FaChevronCircleRight />

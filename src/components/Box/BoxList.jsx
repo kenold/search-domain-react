@@ -4,20 +4,22 @@ import "./BoxList.scss";
 
 const BoxList = ({ services }) => {
   return (
-    <div className="boxes">
-      {services.map(service => (
-        <Box
-          key={service.id}
-          label={service.label}
-          title={service.title}
-          subtitle={service.subtitle}
-          icon={service.icon}
-          image={service.image}
-          color={service.color}
-          gridArea={service.gridArea}
-        />
-      ))}
-    </div>
+    <section className="boxes-wrapper">
+      <div className="boxes">
+        {services.map(service => (
+          <Box
+            key={service.id}
+            label={service.label}
+            title={service.title}
+            subtitle={service.subtitle}
+            icon={service.icon}
+            image={service.image}
+            color={service.color}
+            gridArea={service.gridArea}
+          />
+        ))}
+      </div>
+    </section>
   );
 };
 

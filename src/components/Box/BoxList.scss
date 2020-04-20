@@ -9,7 +9,6 @@
     "five"
     "six";
     grid-template-rows: repeat(3, auto) 250px auto;
-    justify-content: center;
 }
 @media (min-width: 768px) {
   .boxes {

@@ -1,11 +1,16 @@
 import React from "react";
-import "./styles.css";
+import "./styles.scss";
+import "./breakpoint.scss";
+import Teaser from "./components/Teaser/Teaser";
+import Search from "./components/Search/Search";
 import BoxList from "./components/Box/BoxList";
 import { services } from "./data";
 
 export default function App() {
   return (
     <div className="container">
+      <Teaser />
+      <Search />
       <BoxList services={services} />
     </div>
   );
