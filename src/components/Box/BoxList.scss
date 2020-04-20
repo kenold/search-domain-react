@@ -9,15 +9,16 @@
     "five"
     "six";
     grid-template-rows: repeat(3, auto) 250px auto;
-}
-@media (min-width: 768px) {
-  .boxes {
-    grid-template-columns: 150px 180px 270px 150px;
-    grid-template-areas: 
-      "one two four five"
-      "three three four five"
-      "three three four six";
-      grid-template-rows: auto;
-    gap: 10px;
-  }
+    @media (min-width: 768px) {
+      grid-template-columns: 150px 180px 270px 150px;
+      grid-template-areas: 
+        "one two four five"
+        "three three four five"
+        "three three four six";
+        grid-template-rows: auto;
+      gap: 10px;
+    }
+    &-wrapper {
+      margin-top: 60px;
+    }
 }

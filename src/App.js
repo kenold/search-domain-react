@@ -11,6 +11,7 @@ export default function App() {
     <div className="container">
       <Teaser />
       <Search />
+      <p className="txt-accent">Transfer a domain you already own</p>
       <BoxList services={services} />
     </div>
   );
