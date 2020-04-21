@@ -6,15 +6,20 @@
   flex-direction: column;
   padding: 20px;
   margin-bottom: 15px;
-  width: 250px;
-  height: 120px;
+  // width: 250px;
+  // height: 120px;
   @media (min-width: 768px) {
     width: 350px;
     height: 180px;
   }
   &__header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
   &__balance {
     &-label {
@@ -30,7 +35,10 @@
     width: 25px;
   }
   &__footer {
-    margin-top: auto;
+    margin-top: 1rem;
+    @media (min-width: 768px) {
+      margin-top: auto;
+    }
   }
   &__name {
     font-size: 90%;
@@ -38,10 +46,14 @@
   }
   &__bottom {
     display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
-    font-size: 90%;
-    font-weight: 300;
+    flex-direction: column;
+    line-height: 1.2;
+    @media (min-width: 768px) {
+      justify-content: space-between;
+      margin-top: 5px;
+      font-size: 90%;
+      font-weight: 300;
+    }
   }
 }
 
