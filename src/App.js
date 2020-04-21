@@ -6,7 +6,7 @@ import Search from "./components/Search/Search";
 import BoxList from "./components/Box/BoxList";
 import CreditCard from "./components/CreditCard/CreditCard";
 import User from "./components/User/User";
-import { services } from "./data";
+import { services } from "./data/services";
 
 export default function App() {
   const user = {

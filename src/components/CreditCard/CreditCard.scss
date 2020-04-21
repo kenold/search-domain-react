@@ -1,5 +1,4 @@
 .cc {
-  background-color: var(--color-purple);
   color: #fff;
   border-radius: 5px;
   display: flex;
@@ -7,7 +6,7 @@
   padding: 20px;
   width: 350px;
   height: 180px;
-  margin: 0 auto;
+  margin-bottom: 15px;
   &__header {
     display: flex;
     justify-content: space-between;
@@ -29,16 +28,25 @@
     margin-top: auto;
   }
   &__name {
-    color: rgba(255, 255, 255, 0.75);
     font-size: 90%;
     margin-bottom: 0.5rem;
   }
   &__bottom {
-    color: rgba(255, 255, 255, 0.95);
     display: flex;
     justify-content: space-between;
     margin-top: 5px;
     font-size: 90%;
     font-weight: 300;
+  }
+}
+
+.cc {
+  &--visa {
+    background-color: #fff;
+    color: #000;
+  }
+  &--mastercard {
+    background-color: var(--color-purple);
+    color: #fff;
   }
 }
