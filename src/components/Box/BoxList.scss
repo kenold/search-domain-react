@@ -10,7 +10,7 @@
     "six";
     grid-template-rows: repeat(3, auto) 250px auto;
     @media (min-width: 768px) {
-      grid-template-columns: 150px 180px 270px 150px;
+      grid-template-columns: minmax(auto, 150px) minmax(auto, 180px) minmax(auto, 270px) minmax(auto, 150px);
       grid-template-areas: 
         "one two four five"
         "three three four five"
