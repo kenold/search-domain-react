@@ -1,6 +1,8 @@
 .utility {
   display: flex;
   justify-content: space-between;
+  padding-top: 10px;
+  margin-bottom: 20px;
   &__icons {
     display: flex;
     .dot {
@@ -30,5 +32,8 @@
   }
   &__link {
     font-size: .9375rem;
+    a {
+      padding: 5px 0 5px;
+    }
   }
 }

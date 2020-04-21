@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.scss";
 import "./breakpoint.scss";
+import Header from "./components/Header/Header";
 import Teaser from "./components/Teaser/Teaser";
 import Search from "./components/Search/Search";
 import BoxList from "./components/Box/BoxList";
@@ -12,10 +13,13 @@ export default function App() {
     <div className="wrapper">
       <Sidebar />
       <main className="main-content">
-        <Teaser />
-        <Search />
-        <p className="txt-accent">Transfer a domain you already own</p>
-        <BoxList services={services} />
+        <div className="container">
+          <Header />
+          <Teaser />
+          <Search />
+          <p className="txt-accent">Transfer a domain you already own</p>
+          <BoxList services={services} />
+        </div>
       </main>
     </div>
   );

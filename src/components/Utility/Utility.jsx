@@ -7,15 +7,21 @@ const Utility = () => {
     <div className="utility">
       <div className="utility__icons">
         <div className="utility__icons-email">
-          <FaRegEnvelope />
+          <a href="/">
+            <FaRegEnvelope />
+          </a>
           <div className="dot" />
         </div>
         <div className="utility__icons-bell">
-          <FaRegBell />
+          <a href="/">
+            <FaRegBell />
+          </a>
           <div className="dot" />
         </div>
       </div>
-      <div className="utility__link">Logout</div>
+      <div className="utility__link">
+        <a href="/">Logout</a>
+      </div>
     </div>
   );
 };

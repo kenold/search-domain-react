@@ -1,8 +1,9 @@
 .user {
+  margin-top: 30px;
   text-align: center;
   &__avatar img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
   }
   &__name {
