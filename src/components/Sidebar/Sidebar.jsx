@@ -1,6 +1,7 @@
 import React from "react";
 import User from "../../components/User/User";
 import CreditCardList from "../../components/CreditCard/CreditCardList";
+import Utility from "../Utility/Utility";
 
 const Sidebar = () => {
   const user = {
@@ -10,6 +11,7 @@ const Sidebar = () => {
   };
   return (
     <aside>
+      <Utility />
       <User user={user} />
       <CreditCardList />
     </aside>

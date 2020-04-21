@@ -1,0 +1,34 @@
+.utility {
+  display: flex;
+  justify-content: space-between;
+  &__icons {
+    display: flex;
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      position: absolute;
+      right: -2px;
+      top: -2px;
+      border: 1px solid #fafafa;
+    }
+    &-email {
+      font-size: 1.5rem;
+      position: relative;
+      .dot {
+        background-color: var(--color-purple);
+      }
+    }
+    &-bell {
+      font-size: 1.5rem;
+      position: relative;
+      margin-left: 1.5rem;
+      .dot {
+        background-color: #ff994e;
+      }
+    }
+  }
+  &__link {
+    font-size: .9375rem;
+  }
+}
