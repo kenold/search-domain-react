@@ -1,6 +1,6 @@
 import React from "react";
 import User from "../../components/User/User";
-import CreditCard from "../../components/CreditCard/CreditCard";
+import CreditCardList from "../../components/CreditCard/CreditCardList";
 
 const Sidebar = () => {
   const user = {
@@ -10,8 +10,8 @@ const Sidebar = () => {
   };
   return (
     <aside>
-      <User data={user} />
-      <CreditCard />
+      <User user={user} />
+      <CreditCardList />
     </aside>
   );
 };

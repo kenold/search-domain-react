@@ -1,8 +1,8 @@
 import React from "react";
 import "./User.scss";
 
-const User = ({ data }) => {
-  const { avatar, name, adminRole } = data;
+const User = ({ user }) => {
+  const { avatar, name, adminRole } = user;
   return (
     <section className="user-wrapper">
       <div className="user">

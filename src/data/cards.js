@@ -1,5 +1,6 @@
 export const cards = [
   {
+    id: 1,
     company: "Visa",
     name: "D-Studio",
     balance: "5421.50",
@@ -7,6 +8,7 @@ export const cards = [
     expDate: "02/22"
   },
   {
+    id: 2,
     company: "MasterCard",
     name: "Dravid James",
     balance: "9481.50",
