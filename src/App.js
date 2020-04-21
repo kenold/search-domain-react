@@ -16,8 +16,10 @@ export default function App() {
   };
   return (
     <div className="container">
-      <User data={user} />
-      <CreditCard />
+      <aside>
+        <User data={user} />
+        <CreditCard />
+      </aside>
       <Teaser />
       <Search />
       <p className="txt-accent">Transfer a domain you already own</p>
