@@ -15,15 +15,17 @@ export default function App() {
     adminRole: "Super Admin"
   };
   return (
-    <div className="container">
+    <div className="wrapper">
       <aside>
         <User data={user} />
         <CreditCard />
       </aside>
-      <Teaser />
-      <Search />
-      <p className="txt-accent">Transfer a domain you already own</p>
-      <BoxList services={services} />
+      <main className="main-content">
+        <Teaser />
+        <Search />
+        <p className="txt-accent">Transfer a domain you already own</p>
+        <BoxList services={services} />
+      </main>
     </div>
   );
 }
