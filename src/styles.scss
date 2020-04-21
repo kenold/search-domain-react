@@ -12,9 +12,13 @@ body {
 }
 .wrapper {
   display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
+  flex-direction: column-reverse;
   padding: 15px;
+  @media (min-width: 768px) {
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: row;
+  }
 }
 
 img {

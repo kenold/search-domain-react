@@ -4,22 +4,13 @@ import "./breakpoint.scss";
 import Teaser from "./components/Teaser/Teaser";
 import Search from "./components/Search/Search";
 import BoxList from "./components/Box/BoxList";
-import CreditCard from "./components/CreditCard/CreditCard";
-import User from "./components/User/User";
 import { services } from "./data/services";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 export default function App() {
-  const user = {
-    avatar: "http://source.unsplash.com/XAo09LtQiAQ/300x300",
-    name: "Jessica Astner",
-    adminRole: "Super Admin"
-  };
   return (
     <div className="wrapper">
-      <aside>
-        <User data={user} />
-        <CreditCard />
-      </aside>
+      <Sidebar />
       <main className="main-content">
         <Teaser />
         <Search />
