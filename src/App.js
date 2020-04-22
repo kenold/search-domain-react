@@ -7,6 +7,7 @@ import Search from "./components/Search/Search";
 import BoxList from "./components/Box/BoxList";
 import { services } from "./data/services";
 import Sidebar from "./components/Sidebar/Sidebar";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <p className="txt-accent">Transfer a domain you already own</p>
           <BoxList services={services} />
         </div>
+        <Footer />
       </main>
     </div>
   );
