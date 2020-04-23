@@ -61,20 +61,6 @@ button {
     padding-right: 30px;
   }
 }
-aside {
-  background-color: #fafafa;
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  order: 2;
-  position: absolute;
-  right: -100%;
-  transition: all 200ms ease-in-out;
-  @media (min-width: 920px) {
-    padding: 0 30px;
-    position: unset;
-  }
-}
 
 .main-footer {
   color: #444;

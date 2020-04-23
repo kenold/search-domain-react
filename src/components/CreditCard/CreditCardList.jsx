@@ -4,13 +4,13 @@ import CreditCard from "./CreditCard";
 
 const CreditCardList = () => {
   return (
-    <div className="cc__list">
-      <section className="cc-wrapper">
+    <section className="cc-wrapper">
+      <div className="cc__list">
         {cards.map(cc => (
           <CreditCard key={cc.id} cards={cc} />
         ))}
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

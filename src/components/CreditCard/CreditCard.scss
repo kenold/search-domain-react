@@ -12,12 +12,9 @@
   }
   &__header {
     display: flex;
-    flex-direction: column-reverse;
-    @media (min-width: 768px) {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   &__balance {
     &-label {
