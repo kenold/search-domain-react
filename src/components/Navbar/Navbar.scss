@@ -1,4 +1,5 @@
 .main-nav {
+  margin-left: auto;
   &__toggle {
     display: block;
     @media (min-width: 768px) {
@@ -30,5 +31,14 @@
         padding: 8px 15px;
       }
     }
+  }
+}
+
+.account-icon {
+  display: block;
+}
+.account-icon {
+  @media (min-width: 920px) {
+    display: none;
   }
 }

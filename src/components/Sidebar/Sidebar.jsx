@@ -10,7 +10,7 @@ const Sidebar = () => {
     adminRole: "Super Admin"
   };
   return (
-    <aside>
+    <aside className="sidebar">
       <Utility />
       <User user={user} />
       <CreditCardList />
